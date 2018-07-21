@@ -1,11 +1,11 @@
-## Final Project
-
-**Title:** The Perceptron
+# Assignment 1 : The Perceptron
 
 **Collaborators:**
   - Tommy Lam
   - Anirvan Shukla
   - Ryan Dorril
+
+  Here I present the origins of the perceptron and a novel description of the algorithm. For the analyses conducted, see [HERE](perceptron.ipynb)
 
 ## Origins of the Perceptron
 
@@ -35,15 +35,17 @@ For each input start with some weight. Recall: _0= + w0x0 + w1x1_
 With the "neuron," compute the sum from _i=0_ to _N_ number of vectors of _(xi)(wi)_.
 
 **Step 3: Activation Function**
-Convert the sum to a binary output, such as +1 or -1. Which corresponds to whether or not the "neuron" will fire. An example of such a function follows:
+Convert the sum to a binary output, such as +1 or -1. Which corresponds to whether or not the "neuron" will fire. An example of such a function is,
 
 ```python
-lambda sum: 1 if sum >= 0 else -1
+def SIGN(sum):
+  if sum >= 0:
+    return 1
+  else:
+    return -1
 ```
 
 **Step 4: Update the weights**
 Using the output from the neuron, inspect how does it compare the correct answer--hence the moniker of supervised learning. If the answer is correct no change is made, however if it is not we update the weight for the input vector as: _wi = xi * (learning rate) * (Error)_, where the _learning rate_ is a quantity defined a priori (discussed further in future sections) and _Error_ is the true value - the guessed value.
 
 This process is then repeated, ideally, until all vectors are correctly classified.
-
-## Results
