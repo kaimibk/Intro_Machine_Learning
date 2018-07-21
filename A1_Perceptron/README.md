@@ -5,7 +5,7 @@
   - Anirvan Shukla
   - Ryan Dorril
 
-Here I present the origins of the perceptron and a novel description of the algorithm. For the analyses conducted, see [HERE](perceptron.ipynb)
+Here I present the origins of the perceptron and a novel description of the algorithm. For the analyses conducted, see [HERE](Perceptron.ipynb)
 
 ## Origins of the Perceptron
 
