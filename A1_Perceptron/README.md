@@ -29,7 +29,7 @@ For the outline of this supervised learning algorithm, I will be referring to st
 **Step 1: Inputs**
 Give the "neuron" an input vector. In this notation, _x0_ and _x1_ can correspond to a pair of cartesian coordinates _x_ and _y_.
 
-For each input start with some weight, _wi_. Recall: _0 = B + (w0)(x0) + (w1)(x1)_
+For each input start with some weight, _wi_. Recall: _0 = (B) + (w0)(x0) + (w1)(x1)_
 
 **Step 2: Neuron**
 With the "neuron," compute the sum from _i=0_ to _N_ number of vectors of _(xi)(wi)_.
