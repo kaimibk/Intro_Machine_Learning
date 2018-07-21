@@ -4,7 +4,7 @@
 
 **Grade Recieved:** A
 
-## Five Homework Projects:
+## Four Homework Projects:
 
 **I am currently in progress of uploading the coursework to this repository**
 
@@ -17,4 +17,4 @@
 
 1. ~~ [SVM Binary Classification on Embryo Growth Curves](Final/) ~~ \*
 
-\* Final project not posted as the data used, analyses performed, and results produced are confidential. The data involves sensitive hospital patient information. However, the repository contains a short project descripto
+\* Final project not posted as the data used, analyses performed, and results produced are confidential. The data involves sensitive hospital patient information. However, the repository contains a short project descripton.
