@@ -5,7 +5,7 @@
   - Anirvan Shukla
   - Ryan Dorril
 
-  Here I present the origins of the perceptron and a novel description of the algorithm. For the analyses conducted, see [HERE](perceptron.ipynb)
+Here I present the origins of the perceptron and a novel description of the algorithm. For the analyses conducted, see [HERE](perceptron.ipynb)
 
 ## Origins of the Perceptron
 
@@ -13,12 +13,12 @@ Early attempts of simple "learning machines" were directly modeled after things 
 
 ### Neuroscience Model of Neuron Communication
 
-*Warning*, this is a gross over simplifications. Neurons internally perform information processing on electrical action potentials. While information between neurons is mostly chemical. A novel overview of the process:
+*Warning*, this is a gross over simplification. Neurons internally perform information processing on electrical action potentials. While information between neurons is mostly chemical interactions. A novel overview of the process:
 
 1. Pre-synaptic action potential depolarizes a synaptic terminal.
 1. Calcium ion channels sensitive to voltage changes open and allows calcium to enter.
-1. Neurotransmitter is realeased.
-1. Neurotransmitter binds to post-synpatic receptors.
+1. Neurotransmitter is released.
+1. Neurotransmitter binds to post-synaptic receptors.
 1. Ions enter post-synaptic cell (Evoked Post-Synaptic Potential (EPSP))
 
 ## Overview of the Perceptron Algorithm
@@ -29,13 +29,13 @@ For the outline of this supervised learning algorithm, I will be referring to st
 **Step 1: Inputs**
 Give the "neuron" an input vector. In this notation, _x0_ and _x1_ can correspond to a pair of cartesian coordinates _x_ and _y_.
 
-For each input start with some weight. Recall: _0= + w0x0 + w1x1_
+For each input start with some weight, _wi_. Recall: _0 = B + (w0)(x0) + (w1)(x1)_
 
 **Step 2: Neuron**
 With the "neuron," compute the sum from _i=0_ to _N_ number of vectors of _(xi)(wi)_.
 
 **Step 3: Activation Function**
-Convert the sum to a binary output, such as +1 or -1. Which corresponds to whether or not the "neuron" will fire. An example of such a function is,
+Convert the sum to a binary output, such as _+1_ or _-1_. Which corresponds to whether or not the "neuron" will fire. An example of such a function is,
 
 ```python
 def SIGN(sum):
